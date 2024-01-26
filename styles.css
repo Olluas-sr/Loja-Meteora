@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+:root{
+    --primary-bg-color: #cccccc;
+    --higligth-bg-color: #daff01;
+    --btn-color: #9353ff;
+    --header-bg-color: #000000;
+    --header-font-color: #ffffff;
+    --main-font:'Inter', sans-serif;
+}
+
+.container-header{
+    display: flex;
+    height: 58px;
+    width: 100vw;
+    background: var(--header-bg-color);
+    justify-content: space-between;
+    font-family: var(--main-font);
+}
+
+.container-header-nav{
+    display: flex;
+    align-items: center;
+    gap: 40px ;
+}
+
+.container-header-nav img{
+    margin-left: 23px;
+}
+
+.container-header-logo{
+    margin: 13px 0px 13px 23px;
+    width: 132px;
+}
+
+.container-header-nav-links-list{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links-link{
+    text-decoration: none;
+    color: var(--header-font-color);
+
+}
+
+.container-header-imputs{
+    display: flex;
+    justify-content: center;
+    margin: 8px 15px;
+    gap: 32px;
+}
+
+.container-header-imputs-search::placeholder{
+    padding-left: 15px;
+}
+
+.container-header-imputs-btn{
+    background-color: var(--header-bg-color);
+    color: var(--header-font-color);
+    border: 1px solid;
+    padding: 9px 12px;
+}
+
+
+@media (max-width:768px) {
+   
+    .container-header-nav{
+        gap: 20px;
+    }
+
+    .container-header-nav img{
+        width: 99px;
+    }
+
+    .container-header-nav-links-list{
+        gap: 20px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:375px) {
+    .container-header-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100vh;
+    }
+    
+    .container-header-nav img{
+        width: 125px;
+    }
+
+    .container-header-nav-links{
+        display: none;
+    }
+
+    .container-header-imputs{
+        display: none;
+    }
+
+    .chkbox-btn{
+        display: block;
+        margin-right: 16px;
+    }
+
+    .hamburguer-menu-icon{
+        background-image: url(./assets/Mobile/icon-menu.png);
+    }
+}
+
